@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+}
+
+.left-test {
+  flex-basis: 80%;
+}
+
+.sidebar-test {
+  display: flex;
+  flex-basis: 20%;
+}

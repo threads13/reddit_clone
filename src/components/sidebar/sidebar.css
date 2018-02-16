@@ -1,0 +1,5 @@
+.sidebar {
+  background: green;
+  display: flex;
+  flex-basis: 20%;
+}
