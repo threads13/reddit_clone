@@ -1,28 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Submitted from './submitted_date';
 import PostTitle from './post_title';
 import Comments from './comments';
 import Actions from './actions';
+import axios from 'axios';
 
-const Post = props => {
-  return (
-    <div className="post"
-      style={{
-        border: 'solid 0.5px #D9D9D9',
-        paddingLeft: '10px',
-        paddingBottom: '5px',
-        background: '#fff',
-        borderRadius: '2px'
-      }}>
-      <h1><PostTitle /></h1>
-      <p><Submitted /></p>
-      <div style={{display: 'flex'}}>
-        <Comments />
-        <Actions />
+class Post extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      post: []
+    };
+  }
+
+  componentDidMount(){
+    axios.get('https://www.reddit.com/r/reactjs.json')
+    .then(res => {
+      const post = res.data;
+      this.setState({ post });
+        console.log(post.data.children[0].data.title);
+    });
+  }
+
+
+
+  render(){
+    return (
+      <div className="post"
+        style={{
+          border: 'solid 0.5px #D9D9D9',
+          paddingLeft: '10px',
+          paddingBottom: '5px',
+          background: '#fff',
+          borderRadius: '2px'
+        }}>
+        <h1><PostTitle /></h1>
+        <p><Submitted /></p>
+        <div style={{display: 'flex'}}>
+          <Comments />
+          <Actions />
+        </div>
       </div>
-
-    </div>
-  )
+    )
+  }
 };
 
 export default Post;

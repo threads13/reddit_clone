@@ -1,6 +1,7 @@
 body {
   displa: flex;
   flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
 .main {
