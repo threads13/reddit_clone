@@ -6,7 +6,7 @@ const PostTitle = props => {
       style={{display: 'flex', fontSize: '20px'}}
       >
       <strong>
-        Name of the post. oiaesntaiseonta fouaosietnaos tastnoanstoieanstoieanstoenas
+        {props.post}
       </strong>
     </div>
   )
