@@ -2,3 +2,9 @@ body {
   displa: flex;
   flex-direction: column;
 }
+
+.main {
+  display: flex;
+  margin: 2px;
+  justify-content: space-between;
+}
