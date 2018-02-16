@@ -5,7 +5,6 @@ import Post from './post';
 const List = props => {
   return (
     <div className="list">
-      List Component
       <div>
         <Post />
       </div>

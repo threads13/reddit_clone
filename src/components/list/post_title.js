@@ -2,11 +2,13 @@ import React from 'react';
 
 const PostTitle = props => {
   return (
-    <h4 className="post-title"
-      style={{display: 'flex'}}
+    <div className="post-title"
+      style={{display: 'flex', fontSize: '20px'}}
       >
-      Name of the post. oiaesntaiseonta fouaosietnaos tastnoanstoieanstoieanstoenas
-    </h4>
+      <strong>
+        Name of the post. oiaesntaiseonta fouaosietnaos tastnoanstoieanstoieanstoenas
+      </strong>
+    </div>
   )
 };
 

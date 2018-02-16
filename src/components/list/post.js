@@ -6,7 +6,14 @@ import Actions from './actions';
 
 const Post = props => {
   return (
-    <div className="post" style={{border: 'solid 1px black'}}>
+    <div className="post"
+      style={{
+        border: 'solid 0.5px #D9D9D9',
+        paddingLeft: '10px',
+        paddingBottom: '5px',
+        background: '#fff',
+        borderRadius: '2px'
+      }}>
       <h1><PostTitle /></h1>
       <p><Submitted /></p>
       <div style={{display: 'flex'}}>

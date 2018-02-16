@@ -3,7 +3,14 @@ import './navbar.css';
 
 const Navbar = props => {
   return (
-    <div className="navbar" style={{border: 'solid 1px black'}}>Navbar</div>
+    <div className="navbar">
+      <ul>
+        <a>Home</a>
+        <a>New</a>
+        <a>Top</a>
+        <a>Wiki</a>
+      </ul>
+    </div>
   )
 };
 

@@ -4,7 +4,7 @@ import Sidebar from './sidebar/sidebar';
 
 const Main = props => {
   return (
-    <div className="main">
+    <div className="main" style={{background: '#eee'}}>
       <List />
       <Sidebar />
     </div>
