@@ -5,6 +5,8 @@ a {
 .share {
   color: #b3b3b3;
   text-decoration: none;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .postTitle {
@@ -19,6 +21,8 @@ a {
   flex-basis: 20%;
   flex-wrap: nowrap;
 }
+
+
 
 /* .post-item{
   display: flex;

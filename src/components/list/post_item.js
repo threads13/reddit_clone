@@ -5,25 +5,20 @@ import './post_item.css';
 
 const PostItem = props => {
   return (
-    <div className="post-item" style={{marginTop: '15x'}}>
-
-      <p
-        className="postTitle"
-        >
+    <div className="post-item" style={{marginTop: '15px'}}>
+      <a style={{textDecoration: 'none'}} className="postTitle" href={props.data.url}>
         {props.data.title}
-      </p>
-      <p
-        style={{fontSize: '11px', color: '#b3b3b3', marginBottom: '4px'}}
-        >
+      </a>
+      <p className="share" style={{marginBottom: '2px'}}>
         Submitted X hours ago by:  <span style={{color: 'black'}}>{props.data.author}</span>
       </p>
-      <div style={{marginBottom: '25px',}} className="actions">
-        <a style={{color: '#c05b4d', textDecoration: 'none'}} href="">{props.data.num_comments} comments</a>
+      <div style={{marginBottom: '15px',}} className="actions">
+        <a style={{color: '#c05b4d', textDecoration: 'none', marginLeft: '0'}} href="">{props.data.num_comments} comments</a>
         <a className="share" href="">share</a>
         <a className="share"href="">save</a>
         <a className="share"href="">hide</a>
         <a className="share"href="">report </a>
-        <hr />
+        <hr style={{marginTop: '15px'}}/>
       </div>
     </div>
   );
