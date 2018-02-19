@@ -4,7 +4,7 @@ const Subreddits = props => {
   return (
     <div className="subreddits">
       <h3>Related Subreddits</h3>
-      <ul>
+    <ul style={{marginTop: '10px'}}>
         <li>sub 1</li>
         <li>sub 2</li>
         <li>sub 3</li>

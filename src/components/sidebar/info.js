@@ -4,8 +4,15 @@ import './info.css';
 const Info = props => {
   return (
     <div className='info'>
-      <h3 style={{marginBottom: '5px'}}>reactjs</h3>
-      <p style={{marginTop: '0'}}>1343134 members , 234 here</p>
+      <h3 style={{
+          marginBottom: '3px',
+          marginTop: '20px'
+        }}>
+        reactjs
+      </h3>
+      <p className="about-text">
+        1343134 members , <em>234 here</em>
+      </p>
     </div>
   )
 }

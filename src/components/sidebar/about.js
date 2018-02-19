@@ -2,9 +2,12 @@ import React from 'react';
 
 const About = props => {
   return (
-    <div>
+    <div style={{marginTop: '0px'}}>
       <h3 className="about">About</h3>
-      <p>A community for learning...</p>
+    <p className="about-text"
+      style={{marginLeft: '8px'}}>
+        A community for learning and developing web applications using React by Facebook.
+      </p>
     </div>
   )
 };
