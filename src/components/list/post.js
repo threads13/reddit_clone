@@ -4,33 +4,34 @@ import PostTitle from './post_title';
 import Comments from './comments';
 import Actions from './actions';
 import axios from 'axios';
+import PostItem from './post_item';
+import './list.css';
+
+const URL = "https://www.reddit.com/r/reactjs.json";
 
 class Post extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      post: []
-    };
+    this.state = ({
+      entry : { data : { children : [] } }
+      });
   }
 
   componentDidMount(){
-    axios.get('https://www.reddit.com/r/reactjs.json')
-    .then(res => {
-      const post = res.data.data.children;
-      this.setState({ post });
-        // console.log(post[2].data.title);
-    });
-  }
+    axios.get(URL)
+    .then (res => {
+      const entry = res.data;
+      this.setState({ entry })
+      });
+    }
 
   render(){
-    const post = this.state.post.map((t) => (
-      <PostTitle
+    const entry = this.state.entry.data.children.map((t) => (
+      <PostItem
         {...t}
       />
     ));
-    // const post = this.state.post[0].title;
-    // console.log(post);
+
     return (
       <div className="post"
         style={{
@@ -40,12 +41,18 @@ class Post extends Component {
           background: '#fff',
           borderRadius: '2px'
         }}>
-        <h1>{post}</h1>
-        {/* <h1></h1> */}
-        <p><Submitted /></p>
+
+        <div className="list">
+          {entry}
+        </div>
+
+        {/* <h1><PostTitle post={this.state.post} /></h1> */}
+        {/* <h1>title</h1> */}
+        {/* <p><Submitted /></p> */}
         <div style={{display: 'flex'}}>
-          <Comments />
-          <Actions />
+          {/* <Comments /> */}
+          {/* {comment} */}
+          {/* <Actions /> */}
         </div>
       </div>
     )
