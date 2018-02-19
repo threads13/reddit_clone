@@ -1,3 +1,35 @@
 a {
   font-size: 12px;
 }
+
+.share {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.postTitle {
+  color: #c05b4d;
+  font-size: 18px;
+  margin-bottom: 4px;
+
+}
+
+.score {
+  display: flex;
+  flex-basis: 20%;
+  flex-wrap: nowrap;
+}
+
+/* .post-item{
+  display: flex;
+  flex-basis: 80%;
+  flex-wrap: wrap;
+  justify-content: reverse;
+} */
+
+
+/* .sticky:nth-of-type(2){
+  color: blue;
+} */
+/*
+style={{color: '#c05b4d', fontSize: '18px', marginBottom: '4px'}} */

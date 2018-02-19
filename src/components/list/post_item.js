@@ -5,24 +5,32 @@ import './post_item.css';
 
 const PostItem = props => {
   return (
-    <div className="post-item" style={{marginTop: '35x'}}>
-      <p style={{color: '#c05b4d', fontSize: '20px', marginBottom: '4px'}}>
+    <div className="post-item" style={{marginTop: '15x'}}>
+
+      <p
+        className="postTitle"
+        >
         {props.data.title}
       </p>
-      <p style={{fontSize: '11px', color: '#b3b3b3', marginBottom: '4px'}}
+      <p
+        style={{fontSize: '11px', color: '#b3b3b3', marginBottom: '4px'}}
         >
         Submitted X hours ago by:  <span style={{color: 'black'}}>{props.data.author}</span>
       </p>
-      <div style={{marginBottom: '35px',}} className="actions">
-        <a style={{color: '#c05b4d'}} href="">{props.data.num_comments} comments</a>
-        <a href="">share</a>
-        <a href="">save</a>
-        <a href="">hide</a>
-        <a href="">report </a>
+      <div style={{marginBottom: '25px',}} className="actions">
+        <a style={{color: '#c05b4d', textDecoration: 'none'}} href="">{props.data.num_comments} comments</a>
+        <a className="share" href="">share</a>
+        <a className="share"href="">save</a>
+        <a className="share"href="">hide</a>
+        <a className="share"href="">report </a>
+        <hr />
       </div>
-      <hr />
     </div>
   );
 }
 
 export default PostItem;
+//
+// <div className="score">
+//   {props.data.score}
+// </div>
