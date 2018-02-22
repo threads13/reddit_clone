@@ -36,7 +36,16 @@ const PostItem = props => {
     }
   }
 
+  function thumbnailDisplay(){
+    if (props.data.thumbnail === "self") {
+      return "https://gyazo.com/40d1d9eed46af0a095f704d0f67bed1e"
+    } else {
+      return props.data.thumbnail
+    }
+  }
 
+// self = text message icon
+// defaul = globe icon
 
   return (
     <div className="post-item" style={{marginTop: '15px'}}>
@@ -54,7 +63,7 @@ const PostItem = props => {
         <i style={{marginTop: '5px'}} class="fas fa-arrow-down"></i>
       </div>
       <div>
-        <img className="thumbnail" src={props.data.thumbnail} />
+        <img className="thumbnail" src={thumbnailDisplay()} />
       </div>
       <div className="post-content">
         <a
