@@ -4,16 +4,15 @@ const Subreddits = props => {
   return (
     <div className="subreddits">
       <h3>Related Subreddits</h3>
-    <ul style={{marginTop: '10px'}}>
-        <li>sub 1</li>
-        <li>sub 2</li>
-        <li>sub 3</li>
-        <li>sub 4</li>
-        <li>sub 5</li>
-        <li>sub 6</li>
-        <li>sub 7</li>
-        <li>sub 6</li>
-        <li>sub 9</li>
+      <ul style={{marginTop: '10px'}}>
+          <li><a className="webLinks" href="https://www.reddit.com/r/reactnative/">/r/reactnative</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/softwarearchitecture/">/r/softwarearchitecture</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/javascript/">/r/javascript</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/Frontend/">/r/frontend</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/typescript/">/r/typescript</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/babeljs/">/r/babeljs</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/graphql/">/r/graphql</a></li>
+          <li><a className="webLinks" href="https://www.reddit.com/r/SideProject/">/r/sideproject</a></li>
       </ul>
     </div>
   )

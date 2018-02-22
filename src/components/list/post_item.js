@@ -2,6 +2,7 @@ import React from 'react';
 import Actions from './actions';
 import './actions.css';
 import './post_item.css';
+import './self.png';
 
 const PostItem = props => {
   function hightlightTitle() {
@@ -38,7 +39,7 @@ const PostItem = props => {
 
   function thumbnailDisplay(){
     if (props.data.thumbnail === "self") {
-      return "https://gyazo.com/40d1d9eed46af0a095f704d0f67bed1e"
+      return "self.png"
     } else {
       return props.data.thumbnail
     }
