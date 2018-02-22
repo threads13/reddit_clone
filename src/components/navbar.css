@@ -3,6 +3,8 @@
   background: #454545;
   color: white;
   text-transform: uppercase;
+  padding-top: 20px;
+  align-items: flex-end;
 }
 
 .navbar a {

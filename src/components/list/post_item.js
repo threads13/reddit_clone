@@ -40,6 +40,19 @@ const PostItem = props => {
 
   return (
     <div className="post-item" style={{marginTop: '15px'}}>
+      <div className="ups">
+        <i style={{marginBottom: '5px'}} class="fas fa-arrow-up"></i>
+        <p style={{
+            marginTop: '0',
+            marginBottom: '0',
+            fontSize: '12px',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+          {props.data.ups}
+        </p>
+        <i style={{marginTop: '5px'}} class="fas fa-arrow-down"></i>
+      </div>
       <div>
         <img className="thumbnail" src={props.data.thumbnail} />
       </div>
@@ -51,14 +64,14 @@ const PostItem = props => {
         >
           {props.data.title}
         </a>
-        <p className="share" style={{marginBottom: '2px'}}>
+        <p className="share" style={{marginBottom: '1px'}}>
           Submitted X hours ago by:
           <span className={hightlightAuthor()}>
             {props.data.author}
           </span>
         </p>
         <div style={{marginBottom: '15px',}} className="actions">
-          <p>
+          <p style={{marginTop: '1px', marginBottom: '1px'}}>
             <a id="comment" className={highlightComment()} href="">{props.data.num_comments} comments</a>
             <a className={highlightBody()} href="">share</a>
             <a className={highlightBody()} href="">save</a>
