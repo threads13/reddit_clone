@@ -26,10 +26,12 @@ class Post extends Component {
     }
 
   render(){
-    const entry = this.state.entry.data.children.map((t) => (
-      <PostItem
-        {...t}
-      />
+    const entry = this.state.entry.data.children.map((t, i) => (
+        <PostItem
+          key={t.id}
+          {...t}
+          hightlight={i === 0}
+        />
     ));
 
     return (

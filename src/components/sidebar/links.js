@@ -5,9 +5,9 @@ const Links = props => {
     <div>
       <h3>Helpful Links</h3>
       <ul style={{marginTop: '10px'}}>
-        <li>Awesome React</li>
-        <li>Babel (JSX compiler)</li>
-        <li>React Redux Links</li>
+        <li><a className="webLinks" href="https://github.com/enaqx/awesome-react">Awesome React</a></li>
+        <li><a className="webLinks" href="https://github.com/enaqx/awesome-react">Babel (JSX compiler)</a></li>
+        <li><a className="webLinks" href="https://github.com/markerikson/react-redux-links"> React Redux Links</a></li>
       </ul>
     </div>
   )

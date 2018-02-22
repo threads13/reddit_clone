@@ -1,4 +1,5 @@
 import React from 'react';
+import './community.css';
 
 const Community = props => {
   const irc = {
@@ -20,9 +21,9 @@ const Community = props => {
       <p style={irc}>irc.freenode.net #reactjs link</p>
       <h5 style={h5}>On the web:</h5>
       <ul>
-        <li>Reactiflux on Discord</li>
-        <li>discuss.reactjs.org</li>
-        <li>Answers to tagged reactjs on StackOverflow</li>
+        <li><a className="webLinks" href="https://discordapp.com/invite/0ZcbPKXt5bZiQhB5">Reactiflux on Discord</a></li>
+        <li><a className="webLinks" href="https://discuss.reactjs.org/">discuss.reactjs.org</a></li>
+        <li><a className="webLinks" href="https://stackoverflow.com/questions/tagged/reactjs">Answers to tagged reactjs on StackOverflow</a></li>
       </ul>
     </div>
   )

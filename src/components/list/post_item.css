@@ -2,6 +2,10 @@ a {
   font-size: 12px;
 }
 
+#comment {
+  margin-left: 0;
+}
+
 .share {
   color: #b3b3b3;
   text-decoration: none;
@@ -11,9 +15,8 @@ a {
 
 .postTitle {
   color: #c05b4d;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 4px;
-
 }
 
 .score {
@@ -22,18 +25,49 @@ a {
   flex-wrap: nowrap;
 }
 
+.hightlightTitle, .highlightComment, .highlightBody, .hightlightAuthor, .hightlightComment {
+  color: green;
+}
+
+.hightlightTitle {
+  font-size: 20px;
+}
+
+.highlightBody {
+  text-decoration: none;
+}
+
+.highlightComment {
+  margin-left: 0;
+  text-decoration: none;
+}
 
 
-/* .post-item{
+.reset {
+  color: black;
+}
+
+.comment {
+  color: #c05b4d;
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.thumbnail {
   display: flex;
-  flex-basis: 80%;
+  width: 64px;
+  height: 64px;
+  flex-basis: 25%;
+}
+
+.post-content {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: reverse;
-} */
+  flex-direction: column;
+  flex-basis: 75%;
+  margin-left: 10px;
+}
 
-
-/* .sticky:nth-of-type(2){
-  color: blue;
-} */
-/*
-style={{color: '#c05b4d', fontSize: '18px', marginBottom: '4px'}} */
+.post-item{
+  display: flex;
+}
