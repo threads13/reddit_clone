@@ -1,5 +1,6 @@
 import React from 'react';
 import Actions from './actions';
+import Comments from './comments';
 import './actions.css';
 import './post_item.css';
 import './self.png';
@@ -49,9 +50,6 @@ const PostItem = props => {
     }
   }
 
-// self = text message icon
-// defaul = globe icon
-
   return (
     <div className="post-item" style={{marginTop: '15px'}}>
       <div className="ups">
@@ -85,13 +83,16 @@ const PostItem = props => {
           </span>
         </p>
         <div style={{marginBottom: '0px',}} className="actions">
-          <p style={{marginTop: '1px', marginBottom: '1px'}}>
+          <Comments
+            numComments = {props.data.num_comments}
+          />
+          {/* <p style={{marginTop: '1px', marginBottom: '1px'}}>
             <a id="comment" className={highlightComment()} href="">{props.data.num_comments} comments</a>
             <a className={highlightBody()} href="">share</a>
             <a className={highlightBody()} href="">save</a>
             <a className={highlightBody()} href="">hide</a>
             <a className={highlightBody()} href="">report </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
