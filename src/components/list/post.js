@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import Submitted from './submitted_date';
-import PostTitle from './post_title';
-import Comments from './comments';
-import Actions from './actions';
 import axios from 'axios';
 import PostItem from './post_item';
 import './list.css';
