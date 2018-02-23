@@ -1,6 +1,4 @@
 import React from 'react';
-import moment from 'moment';
-// install moment and use it to put in correct time
 
 const Author = props => {
   function hightlightAuthor() {

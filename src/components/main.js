@@ -1,5 +1,4 @@
 import React from 'react';
-import List from './list/list';
 import Sidebar from './sidebar/sidebar';
 import Post from './list/post';
 
