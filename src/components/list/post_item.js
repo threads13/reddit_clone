@@ -39,8 +39,12 @@ const PostItem = props => {
 
   function thumbnailDisplay(){
     if (props.data.thumbnail === "self") {
-      return "self.png"
-    } else {
+      return "https://i.gyazo.com/40d1d9eed46af0a095f704d0f67bed1e.png"
+    } else if (props.data.thumbnail === "default") {
+      return "https://i.gyazo.com/dbcc4b53d03a5a3df42da238e9df4b0e.png"
+    }
+
+    else {
       return props.data.thumbnail
     }
   }
@@ -80,14 +84,13 @@ const PostItem = props => {
             {props.data.author}
           </span>
         </p>
-        <div style={{marginBottom: '15px',}} className="actions">
+        <div style={{marginBottom: '0px',}} className="actions">
           <p style={{marginTop: '1px', marginBottom: '1px'}}>
             <a id="comment" className={highlightComment()} href="">{props.data.num_comments} comments</a>
             <a className={highlightBody()} href="">share</a>
             <a className={highlightBody()} href="">save</a>
             <a className={highlightBody()} href="">hide</a>
             <a className={highlightBody()} href="">report </a>
-            <hr style={{marginTop: '15px'}}/>
           </p>
         </div>
       </div>
