@@ -24,7 +24,7 @@ class Post extends Component {
   render(){
     const entry = this.state.entry.data.children.map((t, i) => (
         <PostItem
-          key={t.id}
+          key={t.data.id}
           {...t}
           hightlight={i === 0}
         />

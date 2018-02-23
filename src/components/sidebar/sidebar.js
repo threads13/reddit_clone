@@ -14,13 +14,12 @@ const Sidebar = props => {
       }}>
       <div className="info">
         <Info className="sidebarInfo"/>
-        <p className="sidebarInfo"><About /></p>
-        <p className="sidebarInfo"><Links /></p>
-        <p className="sidebarInfo"><Community /></p>
-        <p className="sidebarInfo"><Subreddit /></p>
+        <About className="sidebarInfo" />
+        <Links className="sidebarInfo" />
+        <Community className="sidebarInfo" />
+        <Subreddit className="sidebarInfo" />
       </div>
-      </div>
-
+    </div>
   )
 }
 
