@@ -31,7 +31,10 @@ const PostItem = props => {
           title={props.data.title}
           url={props.data.url}
         />
-        <Author author={props.data.author} />
+        <Author
+          author={props.data.author}
+          created={props.data.created_utc}
+        />
         <div style={{marginBottom: '0px',}} className="actions">
           <Comments numComments = {props.data.num_comments}/>
         </div>

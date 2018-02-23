@@ -1,4 +1,6 @@
 import React from 'react';
+import moment from 'moment';
+// install moment and use it to put in correct time
 
 const Author = props => {
   function hightlightAuthor() {
@@ -11,8 +13,8 @@ const Author = props => {
 
   return (
     <p className="share" style={{marginBottom: '1px'}}>
-      Submitted X hours ago by:
-      <span className={hightlightAuthor()}>
+      Submitted by
+      <span style={{marginLeft: '4px'}} className={hightlightAuthor()}>
         {props.author}
       </span>
     </p>

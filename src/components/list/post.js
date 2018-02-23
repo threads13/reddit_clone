@@ -43,15 +43,7 @@ class Post extends Component {
         <div className="list">
           {entry}
         </div>
-
-        {/* <h1><PostTitle post={this.state.post} /></h1> */}
-        {/* <h1>title</h1> */}
-        {/* <p><Submitted /></p> */}
-        <div style={{display: 'flex'}}>
-          {/* <Comments /> */}
-          {/* {comment} */}
-          {/* <Actions /> */}
-        </div>
+        <div style={{display: 'flex'}}></div>
       </div>
     )
   }
