@@ -20,6 +20,8 @@ const PostItem = props => {
     }
   }
 
+  
+
   return (
     <div className="post-item" style={{marginTop: '15px'}}>
       <Votes ups={props.data.ups} />
