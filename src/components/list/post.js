@@ -26,7 +26,7 @@ class Post extends Component {
         <PostItem
           key={t.data.id}
           {...t}
-      
+          index={i}
         />
     ));
 

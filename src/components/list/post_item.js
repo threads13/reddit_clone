@@ -20,8 +20,6 @@ const PostItem = props => {
     }
   }
 
-  
-
   return (
     <div className="post-item" style={{marginTop: '15px'}}>
       <Votes ups={props.data.ups} />
@@ -32,13 +30,18 @@ const PostItem = props => {
         <PostTitle
           title={props.data.title}
           url={props.data.url}
+          index={props.index}
         />
         <Author
           author={props.data.author}
           created={props.data.created_utc}
+          index={props.index}
         />
         <div style={{marginBottom: '0px',}} className="actions">
-          <Comments numComments = {props.data.num_comments}/>
+          <Comments
+            numComments = {props.data.num_comments}
+            index={props.index}
+          />
         </div>
       </div>
     </div>

@@ -16,8 +16,9 @@ a {
 
 .postTitle {
   color: #c05b4d;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 4px;
+  text-decoration: none;
 }
 
 .score {
@@ -27,11 +28,11 @@ a {
 
 }
 
-.hightlightTitle, .highlightComment, .highlightBody, .hightlightAuthor, .hightlightComment {
+ .highlightTitle, .highlightComment, .highlightBody, .highlightAuthor, .highlightComment {
   color: green;
 }
 
-.hightlightTitle {
+.highlightTitle {
   font-size: 18px;
   font-weight: bold;
 }

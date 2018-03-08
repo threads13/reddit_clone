@@ -2,7 +2,7 @@ import React from 'react';
 
 const Comments = props => {
   function highlightBody() {
-    if (props.hightlight){
+    if (props.index === 0){
       return "highlightBody"
     } else {
       return "share"
@@ -10,7 +10,7 @@ const Comments = props => {
   }
 
   function highlightComment() {
-    if (props.hightlight){
+    if (props.index === 0){
       return "highlightComment"
     } else {
       return "comment"
