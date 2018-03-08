@@ -2,7 +2,7 @@ import React from 'react';
 
 const Subreddits = props => {
   return (
-    <div className="subreddits">
+    <div className="subreddits" style={{marginTop: '10px'}}>
       <h3>Related Subreddits</h3>
       <ul style={{marginTop: '10px'}}>
           <li><a className="webLinks" href="https://www.reddit.com/r/reactnative/">/r/reactnative</a></li>

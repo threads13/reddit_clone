@@ -1,9 +1,10 @@
 import React from 'react';
 import './info.css';
+import './sidebar.css';
 
 const Info = props => {
   return (
-    <div className='info'>
+    <div className='info item-group'>
       <h3 style={{
           marginBottom: '3px',
           marginTop: '20px'

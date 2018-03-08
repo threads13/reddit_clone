@@ -5,3 +5,8 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.item-group {
+  border-bottom: 2px solid #f2f2f2;
+  margin-top: 10px;
+}

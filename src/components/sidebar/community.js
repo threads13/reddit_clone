@@ -15,7 +15,7 @@ const Community = props => {
   }
 
   return (
-    <div className="community">
+    <div className="community item-group">
       <h3>Community</h3>
       <h5 style={h5}>IRC</h5>
       <p style={irc}>irc.freenode.net #reactjs link</p>
