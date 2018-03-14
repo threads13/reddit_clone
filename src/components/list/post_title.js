@@ -1,20 +1,20 @@
 import React from 'react';
 
-const PostTitle = props => {
+const PostTitle = ({ title, url, index }) => {
   function highlightTitle(){
-    if (props.index === 0){
+    if (index === 0){
       return "highlightTitle postTitle"
     } else {
       return "postTitle"
     }
   }
-  
+
   return (
     <a
       className={highlightTitle()}
-      href={props.url}
+      href={url}
     >
-      {props.title}
+      {title}
     </a>
   )
 };

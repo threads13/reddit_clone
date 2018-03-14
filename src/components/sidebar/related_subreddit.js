@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Subreddits = props => {
+const Subreddits = () => {
   return (
     <div className="subreddits" style={{marginTop: '10px'}}>
       <h3>Related Subreddits</h3>

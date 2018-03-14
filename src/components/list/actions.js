@@ -1,7 +1,7 @@
 import React from 'react';
 import './actions.css';
 
-const Actions = props => {
+const Actions = () => {
   return (
     <div className="actions">
       <a>share</a>

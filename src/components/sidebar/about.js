@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = props => {
+const About = () => {
   return (
     <div className="item-group">
       <h3 className="about">About</h3>

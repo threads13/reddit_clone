@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Votes = props => {
+const Votes = ({ ups }) => {
   return (
     <div className="ups">
       <i style={{marginBottom: '5px'}} className="fas fa-arrow-up"></i>
@@ -11,7 +11,7 @@ const Votes = props => {
           display: 'flex',
           justifyContent: 'center'
         }}>
-        {props.ups}
+        {ups}
       </p>
       <i style={{marginTop: '5px'}} className="fas fa-arrow-down"></i>
     </div>

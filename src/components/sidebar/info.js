@@ -2,7 +2,7 @@ import React from 'react';
 import './info.css';
 import './sidebar.css';
 
-const Info = props => {
+const Info = () => {
   return (
     <div className='info item-group'>
       <h3 style={{

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Links = props => {
+const Links = () => {
   return (
     <div style={{marginTop: '10px'}}>
       <h3>Helpful Links</h3>

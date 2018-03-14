@@ -1,7 +1,6 @@
 import React from 'react';
-import './community.css';
 
-const Community = props => {
+const Community = () => {
   const irc = {
     fontSize: '13px',
     border: '1px solid #e6e6de',

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Author = props => {
+const Author = ({ index, author }) => {
   function highlightAuthor() {
-    if (props.index === 0){
+    if (index === 0){
       return "highlightAuthor"
     } else {
       return "reset"
@@ -13,7 +13,7 @@ const Author = props => {
     <p className="share" style={{marginBottom: '1px'}}>
       Submitted by
       <span style={{marginLeft: '4px'}} className={highlightAuthor()}>
-        {props.author}
+        {author}
       </span>
     </p>
   );
